@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/code-circle-svgrepo-com.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white">
+    <!-- Header (même que index.html) -->
+    <header class="fixed w-full bg-black/30 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+                    Ryan Feussi
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-purple-400 transition-colors p-2">Accueil</a>
+                    <a href="about.html" class="hover:text-purple-400 transition-colors p-2">À propos</a>
+                    <a href="skills.html" class="hover:text-purple-400 transition-colors p-2">Compétences</a>
+                    <a href="projects.html" class="hover:text-purple-400 transition-colors p-2 bg-blue-300 rounded-sm font-bold">Projets</a>
+                    <a href="contact.html" class="hover:text-purple-400 transition-colors p-2">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 bg-black/50 rounded-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="hover:text-purple-400 transition-colors p-2">Accueil</a>
+                    <a href="about.html" class="hover:text-purple-400 transition-colors p-2">À propos</a>
+                    <a href="skills.html" class="hover:text-purple-400 transition-colors p-2">Compétences</a>
+                    <a href="projects.html" class="hover:text-purple-400 transition-colors bg-blue-300 rounded-sm font-bold p-2">Projets</a>
+                    <a href="contact.html" class="hover:text-purple-400 transition-colors p-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="pt-20">
+        <section class="container mx-auto px-4 py-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent" data-aos="fade-down">
+                Mes Projets
+            </h1>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projet 1 -->
+                <div class="group relative overflow-hidden rounded-xl bg-black/30 backdrop-blur-sm" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
+                         alt="Gestion des Stagiaires"
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-2xl font-bold mb-2">Gestion des Stagiaires</h3>
+                            <p class="text-gray-300 mb-4">
+                                Application web développée en PHP pour la gestion efficace des stagiaires, incluant le suivi des présences et l'évaluation des performances.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">PHP</span>
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">MySQL</span>
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">Bootstrap</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center gap-2 hover:text-purple-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5 <boltAction type="file" filePath="projects.html">                                        .37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center gap-2 hover:text-purple-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 (exemple) -->
+                <div class="group relative overflow-hidden rounded-xl bg-black/30 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                         alt="Portfolio Personnel"
+                         class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-2xl font-bold mb-2">Portfolio Personnel</h3>
+                            <p class="text-gray-300 mb-4">
+                                Site web personnel présentant mes compétences et projets, développé avec HTML, Tailwind CSS et JavaScript.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">HTML</span>
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-purple-600 rounded-full text-sm">JavaScript</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center gap-2 hover:text-purple-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                   class="flex items-center gap-2 hover:text-purple-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            
+            <div class="mb-6 md:mb-0">
+              <h1 class="text-2xl font-bold flex items-center justify-center gap-2">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M13.2942 7.17041L12.0001 12L10.706 16.8297"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    opacity="0.5"
+                    d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span>RyanFeussi</span>
+                <span class="text-blue-500">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M13.2942 7.17041L12.0001 12L10.706 16.8297"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      opacity="0.5"
+                      d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </h1>
+            </div>
+  
+            <!-- Liens rapides -->
+            <ul class="flex space-x-6 text-sm mb-6 md:mb-0">
+              <li>
+                <a href="about.html" class="hover:text-blue-500 transition"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a href="projects.html" class="hover:text-blue-500 transition"
+                  >Projets</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-blue-500 transition"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="skills.html" class="hover:text-blue-500 transition"
+                  >Competences</a
+                >
+              </li>
+            </ul>
+  
+            <!-- Réseaux sociaux -->
+            <div class="flex space-x-4">
+                <a
+                  href="https://github.com/RyanNeuville"
+                  target="_blank"
+                  class="hover:text-blue-500 transition"
+                >
+                  <i class="fab fa-github text-xl"></i>
+                </a>
+                <a
+                  href="https://x.com/@RyanNeuvil5468"
+                  target="_blank"
+                  class="hover:text-blue-500 transition"
+                >
+                  <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                  target="_blank"
+                  class="hover:text-blue-500 transition"
+                >
+                  <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a
+                  href="https://dribbble.com/"
+                  target="_blank"
+                  class="hover:text-blue-500 transition"
+                >
+                  <i class="fab fa-dribbble text-xl"></i>
+                </a>
+              </div>
+            </div>
+  
+          <hr class="my-6 border-gray-700" />
+  
+          <!-- Copyright -->
+          <div class="text-center text-sm">
+            &copy; <span id="year"></span> RyanFeussi. Tous droits réservés.
+          </div>
+        </div>
+      </footer>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

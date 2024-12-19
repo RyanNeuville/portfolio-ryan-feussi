@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compétences - Portfolio</title>
+    <link rel="icon" href="img/code-circle-svgrepo-com.svg" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/skills.js" defer></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 text-white"
+  >
+    <!-- Header (même que index.html) -->
+    <header class="fixed w-full bg-black/30 backdrop-blur-md z-50">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a
+            href="/"
+            class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+          >
+            Ryan Feussi
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="index.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Accueil</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >À propos</a
+            >
+            <a
+              href="skills.html"
+              class="hover:text-purple-400 transition-colors p-2 bg-blue-300 rounded-sm font-bold"
+              >Compétences</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Projets</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menuBtn" class="md:hidden text-white">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-16 6h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="hidden md:hidden mt-4 bg-black/50 rounded-lg p-4"
+        >
+          <div class="flex flex-col space-y-4">
+            <a
+              href="index.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Accueil</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >À propos</a
+            >
+            <a
+              href="skills.html"
+              class="hover:text-purple-400 transition-colors p-2 bg-blue-300 rounded-sm font-bold"
+              >Compétences</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Projets</a
+            >
+            <a
+              href="contact.html"
+              class="hover:text-purple-400 transition-colors p-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-20">
+      <section class="container mx-auto px-4 py-16">
+        <h1
+          class="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+          data-aos="fade-down"
+        >
+          Mes Compétences
+        </h1>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Frontend -->
+          <div
+            class="bg-black/30 p-6 rounded-lg backdrop-blur-sm"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-3 bg-purple-600 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-16 6h16"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">Frontend</h2>
+            </div>
+
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>HTML5</span>
+                  <span class="text-purple-400">80%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>CSS3 & Tailwind</span>
+                  <span class="text-purple-400">60%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 60%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>JavaScript</span>
+                  <span class="text-purple-400">45%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 45%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="bg-black/30 p-6 rounded-lg backdrop-blur-sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-3 bg-purple-600 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">Backend</h2>
+            </div>
+
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>PHP</span>
+                  <span class="text-purple-400">45%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 45%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>MySQL</span>
+                  <span class="text-purple-400">55%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 55%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outils -->
+          <div
+            class="bg-black/30 p-6 rounded-lg backdrop-blur-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-3 bg-purple-600 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">Outils</h2>
+            </div>
+
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>Git</span>
+                  <span class="text-purple-400">40%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 40%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between mb-1">
+                  <span>VS Code</span>
+                  <span class="text-purple-400">85%</span>
+                </div>
+                <div class="h-2 bg-gray-700 rounded-full">
+                  <div
+                    class="h-full bg-purple-500 rounded-full"
+                    style="width: 85%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="bg-black/30 p-6 rounded-lg backdrop-blur-sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div class="p-3 bg-purple-600 rounded-lg">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M8.316 2.07a.75.75 0 00-.632 0l-7 3.25a.75.75 0 000 1.36l1.434.666A.746.746 0 002 7.75V11a.75.75 0 00.158.46L2.75 11l-.592.46.001.002.001.001.003.004.008.01a1.882 1.882 0 00.103.12c.068.076.165.178.292.299.254.24.63.555 1.132.866C4.706 13.388 6.217 14 8.25 14c2.037 0 3.44-.615 4.345-1.266a5.32 5.32 0 00.977-.902 3.916 3.916 0 00.322-.448l.007-.012.003-.004v-.002h.001c0-.001 0-.002-.655-.366l.655.365A.754.754 0 0014 11V7.75a.747.747 0 00-.118-.404l1.434-.666a.75.75 0 000-1.36l-7-3.25zM12.5 7.988L8.316 9.93a.75.75 0 01-.632 0L3.5 7.988v2.723a5.585 5.585 0 00.99.776c.804.5 2.043 1.013 3.76 1.013 1.713 0 2.81-.51 3.468-.984a3.812 3.812 0 00.782-.745V7.988zM8 8.423L2.781 6 8 3.577 13.219 6 8 8.423z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">En Apprentissage</h2>
+            </div>
+
+            <div class="space-y-4">
+              <div class="skill-item flex align-center gap-4">
+                <div class="p-3 bg-purple-600 rounded-lg">
+                  <span>Python</span>
+                </div>
+                <div class="p-3 bg-purple-600 rounded-lg w-fit mx-auto">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>python</title>
+                    <path
+                      d="M19.212 26.447l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.412 0.412 0.287 0.512 0.1 0.512-0.1 0.412-0.287 0.287-0.412 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.287-0.512-0.1-0.512 0.1zM27.297 8.64l0.35 0.075 0.4 0.15 0.437 0.225 0.45 0.337 0.45 0.437 0.437 0.587 0.4 0.737 0.35 0.912 0.262 1.1 0.175 1.3 0.062 1.537-0.075 1.537-0.2 1.3-0.3 1.075-0.4 0.887-0.45 0.712-0.5 0.562-0.525 0.412-0.525 0.3-0.5 0.2-0.45 0.112-0.4 0.062-0.3 0.025-0.2-0.012h-10.272v1.025h7.298l0.012 3.449 0.025 0.45-0.062 0.425-0.137 0.387-0.212 0.362-0.312 0.312-0.387 0.3-0.475 0.25-0.55 0.212-0.637 0.187-0.725 0.162-0.8 0.112-0.887 0.087-0.962 0.050-1.050 0.012-1.587-0.050-1.337-0.175-1.125-0.25-0.912-0.312-0.737-0.375-0.562-0.412-0.425-0.425-0.312-0.425-0.2-0.412-0.125-0.375-0.050-0.312-0.025-0.25 0.012-0.162v-6.673l0.063-0.8 0.162-0.675 0.262-0.575 0.325-0.475 0.375-0.4 0.412-0.3 0.437-0.25 0.437-0.175 0.412-0.125 0.375-0.075 0.325-0.050 0.262-0.025 0.162-0.012h7.298l0.862-0.062 0.737-0.175 0.625-0.262 0.512-0.35 0.412-0.4 0.337-0.437 0.25-0.45 0.187-0.45 0.125-0.437 0.087-0.4 0.050-0.35 0.025-0.262v-3.824h2.612l0.175 0.012zM10.939 3.704l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.425 0.412 0.275 0.512 0.112 0.512-0.113 0.412-0.275 0.287-0.425 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.275-0.512-0.112-0.512 0.112zM18.812 1.229l1.125 0.25 0.912 0.325 0.737 0.375 0.562 0.4 0.425 0.425 0.312 0.425 0.2 0.412 0.125 0.375 0.050 0.325 0.025 0.25-0.012 0.162v6.673l-0.062 0.787-0.162 0.687-0.262 0.575-0.325 0.475-0.375 0.387-0.412 0.312-0.437 0.237-0.437 0.175-0.412 0.125-0.375 0.087-0.325 0.050-0.263 0.025h-7.46l-0.862 0.062-0.737 0.175-0.625 0.275-0.512 0.337-0.412 0.4-0.337 0.437-0.25 0.45-0.187 0.462-0.125 0.437-0.087 0.4-0.050 0.337-0.025 0.262v3.824h-2.787l-0.262-0.037-0.35-0.087-0.4-0.15-0.437-0.225-0.45-0.325-0.45-0.45-0.437-0.575-0.4-0.737-0.35-0.912-0.262-1.1-0.175-1.312-0.062-1.537 0.075-1.524 0.2-1.3 0.3-1.087 0.4-0.887 0.45-0.712 0.5-0.55 0.525-0.412 0.525-0.3 0.5-0.2 0.45-0.125 0.4-0.062 0.3-0.012h0.2l0.075 0.012h10.197v-1.037h-7.298l-0.012-3.436-0.025-0.462 0.062-0.425 0.137-0.387 0.212-0.35 0.312-0.325 0.387-0.287 0.475-0.25 0.55-0.225 0.637-0.187 0.725-0.15 0.8-0.125 0.887-0.075 0.962-0.050 1.050-0.025 1.587 0.063z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="skill-item flex align-center gap-4">
+                <div class="p-3 bg-purple-600 rounded-lg">
+                  <span>Node JS</span>
+                </div>
+                <div class="p-3 bg-purple-600 rounded-lg w-fit mx-auto">
+                  <svg
+                    class="w-6 h-6"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 512 512"
+                    enable-background="new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g id="5151e0c8492e5103c096af88a51f17e3">
+                      <path
+                        display="inline"
+                        d="M482.585,147.869v216.113c0,14.025-7.546,27.084-19.672,34.143L275.665,506.241
+                       c-5.989,3.474-12.782,5.259-19.719,5.259c-6.838,0-13.649-1.785-19.639-5.259l-62.521-36.99c-9.326-5.207-4.775-7.059-1.692-8.128
+                       c12.454-4.322,14.973-5.318,28.268-12.863c1.387-0.793,3.216-0.483,4.647,0.343l48.031,28.519c1.741,0.981,4.2,0.981,5.801,0
+                       l187.263-108.086c1.744-0.996,2.862-2.983,2.862-5.053V147.869c0-2.117-1.118-4.094-2.906-5.163L258.874,34.716
+                       c-1.726-1.01-4.03-1.01-5.768,0L65.962,142.736c-1.818,1.04-2.965,3.079-2.965,5.133v216.113c0,2.069,1.146,4.009,2.954,4.99
+                       l51.299,29.654c27.829,13.903,44.875-2.485,44.875-18.956V166.309c0-3.017,2.423-5.396,5.439-5.396h23.747
+                       c2.969,0,5.429,2.378,5.429,5.396v213.362c0,37.146-20.236,58.454-55.452,58.454c-10.816,0-19.347,0-43.138-11.713l-49.098-28.287
+                       c-12.133-6.995-19.638-20.117-19.638-34.143V147.869c0-14.043,7.505-27.15,19.638-34.135L236.308,5.526
+                       c11.85-6.701,27.608-6.701,39.357,0l187.248,108.208C475.039,120.748,482.585,133.826,482.585,147.869z M321.171,343.367
+                       c-55.88,0-68.175-14.048-72.294-41.836c-0.477-2.966-3.018-5.175-6.063-5.175h-27.306c-3.382,0-6.096,2.703-6.096,6.104
+                       c0,35.56,19.354,77.971,111.759,77.971c66.906,0,105.269-26.339,105.269-72.343c0-45.623-30.827-57.76-95.709-66.35
+                       c-65.579-8.678-72.243-13.147-72.243-28.508c0-12.661,5.643-29.581,54.216-29.581c43.374,0,59.365,9.349,65.94,38.576
+                       c0.579,2.755,3.083,4.765,5.923,4.765h27.409c1.7,0,3.315-0.73,4.47-1.943c1.158-1.28,1.773-2.947,1.611-4.695
+                       c-4.241-50.377-37.713-73.844-105.354-73.844c-60.209,0-96.118,25.414-96.118,68.002c0,46.217,35.729,59,93.5,64.702
+                       c69.138,6.782,74.504,16.883,74.504,30.488C384.589,333.299,365.655,343.367,321.171,343.367z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="skill-item flex align-center gap-4">
+                <div class="p-3 bg-purple-600 rounded-lg">
+                  <span>React JS</span>
+                </div>
+                <div class="p-3 bg-purple-600 rounded-lg w-fit mx-auto">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        fill-rule="nonzero"
+                        d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-.528 2.994c.175.21.351.414.528.609.177-.195.353-.398.528-.609a24.883 24.883 0 0 1-1.056 0zm-1.995-.125a20.678 20.678 0 0 1-2.285-.368c-.075.35-.132.69-.17 1.016-.19 1.583.075 2.545.478 2.777.403.233 1.368-.019 2.645-.974.263-.197.528-.416.794-.655a20.678 20.678 0 0 1-1.462-1.796zm7.331-.368c-.717.16-1.483.284-2.285.368a20.678 20.678 0 0 1-1.462 1.796c.266.24.531.458.794.655 1.277.955 2.242 1.207 2.645.974.403-.232.667-1.194.479-2.777a11.36 11.36 0 0 0-.17-1.016zm1.45-.387c.577 2.639.274 4.74-1.008 5.48-1.282.74-3.253-.048-5.25-1.867-1.997 1.819-3.968 2.606-5.25 1.866-1.282-.74-1.585-2.84-1.009-5.48C3.167 14.794 1.5 13.48 1.5 12s1.667-2.793 4.241-3.614c-.576-2.639-.273-4.74 1.009-5.48 1.282-.74 3.253.048 5.25 1.867 1.997-1.819 3.968-2.606 5.25-1.866 1.282.74 1.585 2.84 1.009 5.48C20.833 9.206 22.5 10.52 22.5 12s-1.667 2.793-4.241 3.614zm-7.32-9.779a11.36 11.36 0 0 0-.793-.655C8.868 4.225 7.903 3.973 7.5 4.206c-.403.232-.667 1.194-.479 2.777.04.327.096.666.17 1.016a20.678 20.678 0 0 1 2.286-.368c.475-.653.965-1.254 1.462-1.796zm3.585 1.796c.802.084 1.568.209 2.285.368.075-.35.132-.69.17-1.016.19-1.583-.075-2.545-.478-2.777-.403-.233-1.368.019-2.645.974a11.36 11.36 0 0 0-.794.655c.497.542.987 1.143 1.462 1.796zm-1.995-.125c-.175-.21-.351-.414-.528-.609-.177.195-.353.398-.528.609a24.884 24.884 0 0 1 1.056 0zm-4.156 7.198a24.884 24.884 0 0 1-.528-.914c-.095.257-.183.51-.263.761.257.056.521.107.79.153zm1.932.234a22.897 22.897 0 0 0 3.392 0A22.897 22.897 0 0 0 15.392 12a22.897 22.897 0 0 0-1.696-2.938 22.897 22.897 0 0 0-3.392 0A22.897 22.897 0 0 0 8.608 12a22.897 22.897 0 0 0 1.696 2.938zm5.852-4.728c.095-.257.183-.51.263-.761a17.974 17.974 0 0 0-.79-.153 24.884 24.884 0 0 1 .527.914zM6.13 9.837c-.34.11-.662.23-.964.36C3.701 10.825 3 11.535 3 12c0 .465.7 1.175 2.166 1.803.302.13.624.25.964.36.222-.7.497-1.426.825-2.163a20.678 20.678 0 0 1-.825-2.163zm1.45-.388c.081.25.169.504.264.76a24.884 24.884 0 0 1 .528-.913c-.27.046-.534.097-.791.153zm10.29 4.714c.34-.11.662-.23.964-.36C20.299 13.175 21 12.465 21 12c0-.465-.7-1.175-2.166-1.803a11.36 11.36 0 0 0-.964-.36c-.222.7-.497 1.426-.825 2.163.328.737.603 1.462.825 2.163zm-1.45.388c-.081-.25-.169-.504-.264-.76a24.884 24.884 0 0 1-.528.913c.27-.046.534-.097.791-.153z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            
+            <div class="mb-6 md:mb-0">
+              <h1 class="text-2xl font-bold flex items-center justify-center gap-2">
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M13.2942 7.17041L12.0001 12L10.706 16.8297"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    opacity="0.5"
+                    d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                    stroke="#1C274C"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span>RyanFeussi</span>
+                <span class="text-blue-500">
+                  <svg
+                    class="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 9L15.6716 9.17157C17.0049 10.5049 17.6716 11.1716 17.6716 12C17.6716 12.8284 17.0049 13.4951 15.6716 14.8284L15.5 15"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M13.2942 7.17041L12.0001 12L10.706 16.8297"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8.49994 9L8.32837 9.17157C6.99504 10.5049 6.32837 11.1716 6.32837 12C6.32837 12.8284 6.99504 13.4951 8.32837 14.8284L8.49994 15"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      opacity="0.5"
+                      d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                      stroke="#1C274C"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+              </h1>
+            </div>
+  
+            <!-- Liens rapides -->
+            <ul class="flex space-x-6 text-sm mb-6 md:mb-0">
+              <li>
+                <a href="about.html" class="hover:text-blue-500 transition"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a href="projects.html" class="hover:text-blue-500 transition"
+                  >Projets</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-blue-500 transition"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="skills.html" class="hover:text-blue-500 transition"
+                  >Competences</a
+                >
+              </li>
+            </ul>
+  
+            <!-- Réseaux sociaux -->
+            <div class="flex space-x-4">
+              <a
+                href="https://github.com/RyanNeuville"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a
+                href="https://x.com/@RyanNeuvil5468"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="hover:text-blue-500 transition"
+              >
+                <i class="fab fa-dribbble text-xl"></i>
+              </a>
+            </div>
+          </div>
+  
+          <hr class="my-6 border-gray-700" />
+  
+          <!-- Copyright -->
+          <div class="text-center text-sm">
+            &copy; <span id="year"></span> RyanFeussi. Tous droits réservés.
+          </div>
+        </div>
+      </footer>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
